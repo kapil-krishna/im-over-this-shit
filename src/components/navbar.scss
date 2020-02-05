@@ -1,0 +1,26 @@
+@import '../general/general-styling.scss';
+
+nav {
+    background-color: black;
+}
+
+.navbar {
+    width: 650px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+    .nav-element {
+        font-family: $nav-font;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        
+    }
+}
+
+li {
+    margin-top: 25px;
+}

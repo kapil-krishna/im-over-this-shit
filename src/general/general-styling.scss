@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Didact+Gothic&display=swap');
+
+$first-color: purple;
+$second-color: blue;
+$third-color: black;
+
+$nav-font: 'Poppins', sans-serif;
+$main-font: 'Didact Gothic', sans-serif;
+
+h1 {
+    font-family: $main-font;
+}
+
+p {
+    font-family: $main-font;
+}
+
+//header, sub-header and paragraph fonts + styling
