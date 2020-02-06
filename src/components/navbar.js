@@ -1,10 +1,15 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import './navbar.scss';
+import Icon from './icon';
+import Image from './image'
 
 export default function NavBar() {
     return (
         <nav>
+            <div className="logo">
+               <Icon/>
+            </div>
             <ul className="navbar">
                 <li>
                     <Link to="/" className="nav-element">Home</Link>

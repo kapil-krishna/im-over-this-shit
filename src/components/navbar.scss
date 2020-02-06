@@ -1,26 +1,58 @@
 @import '../general/general-styling.scss';
 
 nav {
-    background-color: black;
-}
-
-.navbar {
-    width: 650px;
-    margin: 0px;
-    list-style: none;
+    height: 86px;
+    background-color: $first-color;
     display: flex;
-    justify-content: space-evenly;
 
-    .nav-element {
-        font-family: $nav-font;
-        font-size: 18px;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
+    @media screen and (min-width: $tablet-breakpoint) {
+        justify-content: space-between;
+    }
+
+    .logo {
+        max-height: 86px;
+    }
+
+    .navbar {
+
+        display: none;
+
+        @media screen and (min-width: $tablet-breakpoint) {
+            justify-content: space-between;
         
+            width: 650px;
+            margin: auto;
+            margin-right: 0px;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            li {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+        
+            .nav-element {
+                width: 200px;
+                border-style: solid;
+                border-color: $first-color;
+                padding: 18px;
+                font-family: $nav-font;
+                border-radius: $button-radius;
+                font-size: 18px;
+                font-weight: bold;
+                text-decoration: none;
+                color: white;
+                
+            }
+        
+            .nav-element:hover {
+                border-color: white;
+                background-color: $second-color;
+        
+            }
+        }
     }
 }
 
-li {
-    margin-top: 25px;
-}

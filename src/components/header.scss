@@ -1,4 +1,6 @@
+@import '../general/general-styling.scss';
+
 header {
-    background: purple;
+    background: $second-color;
     margin-bottom: 1.45rem;
 }
