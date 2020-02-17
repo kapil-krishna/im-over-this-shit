@@ -7,18 +7,18 @@ import Image from './image'
 export default function NavBar() {
     return (
         <nav>
-            <div className="logo">
-               <Icon/>
-            </div>
             <ul className="navbar">
                 <li>
                     <Link to="/" className="nav-element">Home</Link>
                 </li>
                 <li>
+                    <Link to="/apply" className="nav-element">Apply</Link>
+                </li>
+                <li>
                     <Link to="/course" className="nav-element">Course</Link>
                 </li>
                 <li>
-                    <Link to="/about" className="nav-element">About</Link>
+                    <Link to="/branches" className="nav-element">Branches</Link>
                 </li>
                 <li>
                     <Link to="/faq" className="nav-element">FAQ</Link>

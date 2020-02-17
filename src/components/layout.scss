@@ -1,3 +1,5 @@
+@import '../styles/general-styling.scss';
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -14,7 +16,22 @@ details,
 figcaption,
 figure,
 footer,
-header,
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $first-color;
+  margin-bottom: 1.45rem;
+
+
+  .gatsby-image-wrapper {
+      width: 200px;
+      max-height: 80px;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding: 10px calc((100vw - 1000px) / 2);
+  }
+}
 main,
 menu,
 nav,

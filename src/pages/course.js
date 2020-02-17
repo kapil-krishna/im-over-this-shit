@@ -1,14 +1,14 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Link from 'gatsby-link';
 
 const CoursePage = () => (
   <Layout>
     <SEO title="Course" />
-    <h1>COURSE</h1>
+    <h1>Course</h1>
     <p>Generic info about the course</p>
-    <h1>APPLY</h1>
-    <p>Use the form below to make an application</p>
+    <Link to="/faq">Have questions? Check out our FAQ page</Link>
   </Layout>
 )
 

@@ -4,21 +4,21 @@ import React from "react";
 import Icon from "./icon";
 import NavBar from "./navbar";
 
-const Header = ({ siteTitle }) => (
-  <header>
+const Footer = ({ siteTitle }) => (
+  <footer>
         <Link to="/">
           <Icon/>
         </Link>
         <NavBar/>
-  </header>
+  </footer>
 )
 
-Header.propTypes = {
+Footer.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Footer.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Footer

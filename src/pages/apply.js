@@ -1,19 +1,15 @@
 import React from "react";
-
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
 
-const AboutPage = () => (
+const ApplyPage = () => (
   <Layout>
-    <SEO title="About" />
-    <h1>ABOUT US</h1>
-    <p>Who we are</p>
-    <p>What we teach</p>
+    <SEO title="Apply" />
+    <h1>Apply</h1>
+    <p>Use the below form to apply for the programme</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
     </div>
   </Layout>
 )
 
-export default AboutPage;
+export default ApplyPage;

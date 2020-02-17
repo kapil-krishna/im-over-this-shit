@@ -1,21 +1,35 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { useStaticQuery, graphql } from "gatsby";
 
-const FaqPage = () => (
-  <Layout>
-    <SEO title="FAQ" />
-    <h1>F.A.Q.</h1>
-    <p className="question">Question 1</p>
-    <p>This is an answer to a question</p>
-    <p className="question">Question 2</p>
-    <p>This is an answer to a question</p>
-    <p className="question">Question 3</p>
-    <p>This is an answer to a question</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-    </div>
-  </Layout>
-)
+const FaqPage = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    markdownRemark(frontmatter: {path: {eq: "/faq"}}) {
+      frontmatter {
+        title
+        path
+        date
+      }
+      html
+    }
+  }
+  `);
+
+  return (
+      <Layout>
+        <SEO title="FAQ" />
+        <div className="faqContainer">
+          <div className="faqTitle">
+            <h1>{data.markdownRemark.frontmatter.title}</h1>
+          </div>
+          <div 
+            className="faqContent" 
+            dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}/>
+        </div>
+      </Layout>
+    );
+  };
 
 export default FaqPage;

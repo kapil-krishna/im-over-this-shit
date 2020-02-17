@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 const Icon = () => {
   const data = useStaticQuery(graphql`
     query {
-      jsIcon: file(relativePath: { eq: "javaswitch-logo.png" }) {
+      jsIcon: file(relativePath: { eq: "javaswitch-round4-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -16,6 +16,6 @@ const Icon = () => {
   `);
 
   return <Img fluid={data.jsIcon.childImageSharp.fluid} />
-}
+};
 
 export default Icon;
