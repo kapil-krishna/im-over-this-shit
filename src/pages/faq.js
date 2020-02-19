@@ -10,7 +10,6 @@ const FaqPage = () => {
       frontmatter {
         title
         path
-        date
       }
       html
     }
