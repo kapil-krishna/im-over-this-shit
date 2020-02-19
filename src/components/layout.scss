@@ -6,6 +6,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  background-color: $background-color;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,7 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: $first-color;
-  margin-bottom: 1.45rem;
+
 
 
   .gatsby-image-wrapper {
@@ -632,6 +633,7 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

@@ -20,7 +20,7 @@ const FaqPage = () => {
   return (
       <Layout>
         <SEO title="FAQ" />
-        <div className="faqContainer">
+        <div className="container">
           <div className="faqTitle">
             <h1>{data.markdownRemark.frontmatter.title}</h1>
           </div>

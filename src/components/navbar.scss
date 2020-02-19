@@ -12,9 +12,8 @@ nav {
 
         display: none;
 
-        @media screen and (min-width: $tablet-breakpoint) {
+        @media screen and (min-width: 912px) {
             justify-content: space-between;
-        
             width: auto;
             margin: auto;
             margin-right: 0px;
@@ -33,13 +32,17 @@ nav {
             .nav-element {
                 border-style: solid;
                 border-color: $first-color;
-                padding: 18px;
+                padding-left: 18px;
+                padding-right: 18px;
+                padding-top: 13px;
+                padding-bottom: 13px;
                 font-family: $nav-font;
                 border-radius: $button-radius;
                 font-size: 18px;
                 font-weight: bold;
                 text-decoration: none;
                 color: white;
+                transition: 0.15s;
                 
             }
         

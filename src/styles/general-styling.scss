@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Didact+Gothic&display=swap');
 
-$first-color: rgb(111, 30, 136);
-$second-color: rgb(207, 19, 113);
-$second-color-saved: rgb(207, 19, 113);
+$background-color: white;
+$first-color: rgb(94, 60, 214);
+$second-color: rgb(47, 196, 216);
 $third-color: black;
 $fourth-color: white;
 
@@ -10,26 +10,71 @@ $nav-font: 'Poppins', sans-serif;
 $main-font: 'Didact Gothic', sans-serif;
 
 $button-radius: 5px;
+$border-radius: 10px;
 
 $phone-breakpoint: 576px;
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 992px;
 $large-desktop-breakpoint: 1200px; 
 
-h1 {
+section {
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.testimonialContainer {
+    max-width: none;
+    background-color: $third-color;
+    color: $fourth-color;
+}
+
+@mixin orangeButton {
+    color: $fourth-color;
+    background-color: rgb(252, 105, 19);
     font-family: $main-font;
+    text-decoration: none;
+    border-radius: $button-radius;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+    background-color: rgb(231, 135, 80);
+    }
+}
+
+@mixin frame {
+    margin: auto;
+    padding: 10px;
+    
+    @media screen and (min-width: $desktop-breakpoint) {
+        max-width: $desktop-breakpoint;
+    
+    }
+}
+
+h1, h2, h3, h4 {
+    @include frame;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: $main-font;
+
+}
+
+h1, h2 {
+    text-align: center;
 }
 
 p {
     font-family: $main-font;
+    text-align: justify;
+    font-size: 20px;
+
+    @include frame;
 }
 
-section {
-
-}
-
-.heroMain {
-
-}
 
 //header, sub-header and paragraph fonts + styling

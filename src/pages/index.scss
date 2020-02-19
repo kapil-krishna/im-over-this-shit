@@ -1,0 +1,39 @@
+@import '../styles/general-styling.scss';
+
+.banner {
+    margin: auto;
+    height: 800px;
+    background-image: url("../images/coding-pic-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: none;
+  
+    h1, h2 {
+      color: $third-color;
+    }
+  }
+
+.bannerContent {
+    background-color: white;
+    border-radius: $border-radius;
+    margin: auto;
+    max-width: 992px;
+    opacity: 0.7;
+    padding: 10px;
+    padding-bottom: 150px;
+}
+  
+.bannerButtons {
+    display: block;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 500px;
+
+    .applyNow {
+        @include orangeButton;
+    }
+    
+    .contact {
+        @include orangeButton;
+    }
+}
