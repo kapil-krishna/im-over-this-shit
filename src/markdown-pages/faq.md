@@ -1,4 +1,5 @@
 ---
+path: "/faq"
 title: F.A.Qs
 ---
 ## General questions
