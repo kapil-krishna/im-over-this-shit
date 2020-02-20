@@ -1,10 +1,7 @@
 ---
-path: "/faq"
 title: F.A.Qs
 ---
 ## General questions
-
-Donkey Kong
 
 ### Do I need to know anything beforehand?
 
