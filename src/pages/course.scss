@@ -1,0 +1,6 @@
+@import '../styles/general-styling.scss';
+
+.faqButton {
+    @include orangeButtonWhiteBack;
+    width: auto;
+}

@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Didact+Gothic&display=swap');
 
+$purple-color: rgb(94, 60, 214);
+$aqua-color: rgb(47, 196, 216);
+$black-color: black;
+$white-color: white;
+$charcoal-color: rgb(68, 64, 64);
+$orange-color: rgb(255, 94, 0);
 $background-color: white;
-$first-color: rgb(94, 60, 214);
-$second-color: rgb(47, 196, 216);
-$third-color: black;
-$fourth-color: white;
 
-$nav-font: 'Poppins', sans-serif;
+$button-font: 'Poppins', sans-serif;
 $main-font: 'Didact Gothic', sans-serif;
 
 $button-radius: 5px;
@@ -17,31 +19,58 @@ $tablet-breakpoint: 768px;
 $desktop-breakpoint: 992px;
 $large-desktop-breakpoint: 1200px; 
 
+$section-padding-bottom: 50px;
+
 section {
     margin: 0 auto;
     padding: 15px;
     text-align: center;
 }
 
-.testimonialContainer {
-    max-width: none;
-    background-color: $third-color;
-    color: $fourth-color;
-}
-
 @mixin orangeButton {
-    color: $fourth-color;
-    background-color: rgb(252, 105, 19);
-    font-family: $main-font;
+    font-family: $button-font;
+    font-weight: bold;
+    font-size: 20px;
     text-decoration: none;
     border-radius: $button-radius;
-    padding: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.3s;
+    border-style: solid;
+    padding: 14px;
+    transition: 0.4s;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        padding: 20px;
+    
+    }
+
+    @media screen and (max-width: $desktop-breakpoint) {
+        width: 145px;
+    
+    }
+}
+
+@mixin orangeButtonWhiteBack {
+    @include orangeButton;
+
+    color: $white-color;
+    border-color: $white-color;
+    background-color: $orange-color;
 
     &:hover {
-    background-color: rgb(231, 135, 80);
+        background-color: $black-color;
+    }
+}
+
+@mixin orangeButtonBlackBack {
+    @include orangeButton;
+
+    color: $black-color;
+    border-color: $black-color;
+    background-color: $white-color;
+
+    &:hover {
+        color: $white-color;
+        border-color: $white-color;
+        background-color: $orange-color;
     }
 }
 
@@ -56,8 +85,8 @@ section {
 }
 
 h1 {
-    color: $fourth-color;
-    background-color: $third-color;
+    color: $black-color;
+    background-color: $white-color;
 
     @media screen and (min-width: $desktop-breakpoint) {
         max-width: none;

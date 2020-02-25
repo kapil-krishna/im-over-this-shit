@@ -4,43 +4,111 @@
     position: relative;
     z-index: 0;
     margin: auto;
-    height: 800px;
+    padding-bottom: 40px;
+    padding-top: 30px;
     background-image: url("../images/coding-pic-2.png");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: none;
 
-    h1 {
-        color: $third-color;
-        background-color: $fourth-color;
+    @media screen and (min-width: $desktop-breakpoint) {
+        padding-top: 100px;
+        height: 800px;
     }
 
   }
 
+.bannerOutline {
+    border-style: solid;
+    border-width: 8px;
+    border-color: $white-color;
+    border-radius: $border-radius;
+    max-width: 992px;
+    margin: auto;
+
+}
+
 .bannerContent {
+    @include frame;
+
     position: relative;
     z-index: -1;
-    color:black;
-    background-color: white;
-    border-radius: $border-radius;
-    margin: auto;
+    color:white;
+    background-color: $black-color;
     max-width: 992px;
     opacity: 0.7;
-    padding: 10px;
     padding-bottom: 100px;
+
+    .gatsby-image-wrapper {
+        height: 120px;
+
+        @media screen and (min-width: $phone-breakpoint) {
+            height: 180px;
+            margin: auto;
+            width: 90%;
+        }
+
+        @media screen and (min-width: $tablet-breakpoint) {
+            width: 80%;
+        }
+
+        @media screen and (min-width: $desktop-breakpoint) {
+            width: 70%;
+        }
+    }
+
+    h2 {
+        font-size: 27px;
+        font-weight: bolder;
+
+        @media screen and (min-width: $tablet-breakpoint) {
+            font-size: 35px;
+        
+        }
+    }
 }
   
 .bannerButtons {
-    display: block;
+    display: flex;
     justify-content: space-evenly;
     margin: auto;
-    max-width: 500px;
+    margin-top: -32px;
+    max-width: 450px;
 
     .applyNow {
-        @include orangeButton;
+        @include orangeButtonWhiteBack;
     }
     
     .contact {
-        @include orangeButton;
+        @include orangeButtonWhiteBack;
     }
 }
+
+.aboutContainer {
+    // color: $black-color;
+    // background-color: $white-color;
+    color: $white-color;
+    background-color: $black-color;
+    padding-bottom: $section-padding-bottom;
+
+    p {
+        padding-bottom: $section-padding-bottom;
+    }
+
+    .findOutMore {
+        @include orangeButtonWhiteBack;
+    }
+}
+
+.testimonialContainer {
+    max-width: none;
+    color: $white-color;
+    background-color: $purple-color;
+    
+}
+
+.companyContainer {
+    background-color: $white-color;
+}
+
+

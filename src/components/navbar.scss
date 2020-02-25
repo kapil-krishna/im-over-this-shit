@@ -11,6 +11,7 @@ nav {
     .navbar {
 
         display: none;
+        padding-right: 10px;
 
         @media screen and (min-width: 912px) {
             justify-content: space-between;
@@ -31,24 +32,24 @@ nav {
         
             .nav-element {
                 border-style: solid;
-                border-color: $first-color;
+                border-color: $purple-color;
                 padding-left: 18px;
                 padding-right: 18px;
                 padding-top: 13px;
                 padding-bottom: 13px;
-                font-family: $nav-font;
+                font-family: $button-font;
                 border-radius: $button-radius;
                 font-size: 18px;
                 font-weight: bold;
                 text-decoration: none;
                 color: white;
-                transition: 0.15s;
+                transition: 0.2s;
                 
             }
         
             .nav-element:hover {
-                border-color: white;
-                background-color: $second-color;
+                border-color: $orange-color;
+                background-color: $orange-color;
         
             }
         }
