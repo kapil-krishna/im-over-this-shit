@@ -31,24 +31,22 @@ nav {
             }
         
             .nav-element {
-                border-style: solid;
-                border-color: $purple-color;
                 padding-left: 18px;
                 padding-right: 18px;
                 padding-top: 13px;
                 padding-bottom: 13px;
                 font-family: $button-font;
-                border-radius: $button-radius;
                 font-size: 18px;
                 font-weight: bold;
+                color: $white-color;
+                border-radius: $button-radius + 20;
                 text-decoration: none;
-                color: white;
                 transition: 0.2s;
                 
             }
         
             .nav-element:hover {
-                border-color: $aqua-color;
+                border-color: $purple-color;
                 background-color: $black-color;
         
             }
