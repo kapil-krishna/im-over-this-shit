@@ -1,11 +1,27 @@
 @import '../styles/general-styling.scss';
 
-img {
-    // margin: 10px;
-    object-fit: scale-down;
-}
-
 .logoGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 1000px;
+
+    .logoCard {
+        margin: auto;
+        flex: 1 0 21%;
+        padding: 15px;
+    }
+
+    .gatsby-image-wrapper {
+        flex-grow: 1;
+        width: 250px;
+        max-height: 120px;
+        margin: auto;
+        
+        img {
+            object-fit: contain !important;  
+        }
+    }
 }

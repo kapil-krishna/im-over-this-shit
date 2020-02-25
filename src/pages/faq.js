@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby";
 const FaqPage = () => {
   const data = useStaticQuery(graphql`
   query {
-    markdownRemark(frontmatter: {path: {eq: "/faq"}}) {
+    markdownRemark(frontmatter: {title: {eq: "F.A.Qs"}}) {
       frontmatter {
         title
         path

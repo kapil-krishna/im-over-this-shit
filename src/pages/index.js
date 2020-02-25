@@ -4,6 +4,7 @@ import SEO from "../components/seo";
 import "./index.scss";
 import LogoGrid from "../components/logoGrid";
 import Icon from '../components/icon';
+import Testimonials from "../components/testimonial";
 
 const IndexPage = () => (
   <Layout>
@@ -32,7 +33,7 @@ const IndexPage = () => (
     
     <section className="testimonialContainer">
       <h2>Hear from our recent graduates</h2>
-      <p>[SECTION OF TESTIOMONIALS]</p>
+      <Testimonials/>
     </section>
     
     <section className="companyContainer">

@@ -43,26 +43,36 @@
         height: 120px;
 
         @media screen and (min-width: $phone-breakpoint) {
-            height: 180px;
+            height: 140px;
             margin: auto;
-            width: 90%;
+            width: 70%;
         }
 
         @media screen and (min-width: $tablet-breakpoint) {
-            width: 80%;
+            width: 60%;
         }
 
         @media screen and (min-width: $desktop-breakpoint) {
-            width: 70%;
+            width: 50%;
         }
     }
 
     h2 {
-        font-size: 27px;
+        font-size: 20px;
         font-weight: bolder;
 
         @media screen and (min-width: $tablet-breakpoint) {
-            font-size: 35px;
+            font-size: 24px;
+        
+        }
+
+        @media screen and (min-width: $tablet-breakpoint) {
+            font-size: 28px;
+        
+        }
+
+        @media screen and (min-width: $desktop-breakpoint) {
+            font-size: 30px;
         
         }
     }
@@ -85,8 +95,6 @@
 }
 
 .aboutContainer {
-    // color: $black-color;
-    // background-color: $white-color;
     color: $white-color;
     background-color: $black-color;
     padding-bottom: $section-padding-bottom;

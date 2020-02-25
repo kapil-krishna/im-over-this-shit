@@ -1,4 +1,0 @@
----
-path: "/testimonials"
-title: "Testimonials"
----
