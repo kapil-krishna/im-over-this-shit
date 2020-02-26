@@ -1,5 +1,7 @@
 @import '../styles/general-styling.scss';
 
+$testimonial-hw: 180px;
+
 .testimonials {
     display: flex;
     flex-direction: row;
@@ -25,12 +27,13 @@
         }
         
 
-        .testimonialImage {
-            max-width: 200px;
-            max-height: 200px;
+        .gatsby-image-wrapper {
+            max-width: $testimonial-hw;
+            max-height: $testimonial-hw;
             border-style: solid;
             border-radius: $border-radius + 100;
-            margin: 10px;
+            margin: auto;
+            margin-top: 10px;
 
             img {
                 object-fit: contain !important; 

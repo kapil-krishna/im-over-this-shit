@@ -33,10 +33,12 @@ const Testimonials = () => {
             {data.allFile.edges.map(edge => 
                 <div className="testimonialCard">
                     <Img 
-                        className="testimonialImage" 
                         fluid={edge.node.childMarkdownRemark.frontmatter.featuredImage.childImageSharp.fluid} 
                         />
-                    <div 
+                    <div className="testimonialTitle">
+                        <h2>{edge.node.childMarkdownRemark.frontmatter.title}</h2>
+                    </div>
+                    <div
                         className="testimonialText"
                         dangerouslySetInnerHTML={{__html: edge.node.childMarkdownRemark.html}}>
                     </div>

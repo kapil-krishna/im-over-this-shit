@@ -32,7 +32,7 @@ const IndexPage = () => (
     </section>
     
     <section className="testimonialContainer">
-      <h2>Hear from our recent graduates</h2>
+      <h2>Hear from some of our recent graduates</h2>
       <Testimonials/>
     </section>
     
