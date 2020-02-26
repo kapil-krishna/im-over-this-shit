@@ -1,6 +1,6 @@
 ---
 path: "/testimonials/kapil"
-title: "Testimonials"
+title: "Kapil"
 featuredImage: ../../images/testimonialImages/kapil.jpg
 ---
 
