@@ -4,6 +4,7 @@ backend:
 
 publish_mode: editorial_workflow
 media_folder: src/images
+public_folder: ../images
 
 collections:
   - name: "markdown-pages" # Used in routes, e.g., /admin/collections/blog
@@ -21,5 +22,5 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Photo", name: "featuredImage", widget: "string", default: "../../images/testimonialImages/default-person.jpg"}
+      - {label: "Photo", name: "featuredImage", widget: "image", default: "../../images/testimonialImages/default-person.jpg"}
       - {label: "Body", name: "body", widget: "markdown"}
