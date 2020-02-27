@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import './navbar.scss';
-import Icon from './icon';
-import Image from './image'
 
 export default function NavBar() {
     return (
@@ -10,9 +8,6 @@ export default function NavBar() {
             <ul className="navbar">
                 <li>
                     <Link to="/" className="nav-element">Home</Link>
-                </li>
-                <li>
-                    <Link to="/apply" className="nav-element">Apply</Link>
                 </li>
                 <li>
                     <Link to="/course" className="nav-element">Course</Link>
@@ -25,6 +20,9 @@ export default function NavBar() {
                 </li>
                 <li>
                     <Link to="/contact" className="nav-element">Contact Us</Link>
+                </li>
+                <li>
+                    <Link to="/apply" className="applyButton">Apply</Link>
                 </li>
             </ul>
         </nav>

@@ -31,24 +31,35 @@ nav {
             }
         
             .nav-element {
-                padding-left: 18px;
-                padding-right: 18px;
-                padding-top: 13px;
-                padding-bottom: 13px;
+                @include navPadding;
+                border-style: solid;
+                border-color: $purple-color;
+                border-radius: $button-radius;
                 font-family: $button-font;
                 font-size: 18px;
                 font-weight: bold;
                 color: $white-color;
-                border-radius: $button-radius + 20;
                 text-decoration: none;
-                transition: 0.2s;
+                transition: 0.4s;
                 
             }
         
             .nav-element:hover {
-                border-color: $purple-color;
+                border-color: $aqua-color;
                 background-color: $black-color;
         
+            }
+
+            .applyButton {
+                @include orangeButtonWhiteBack;
+                padding: 10px 18px 10px 18px !important;
+
+                &:hover {
+                    border-color: $aqua-color;
+                }
+
+        
+
             }
         }
     }

@@ -27,6 +27,10 @@ section {
     text-align: center;
 }
 
+@mixin navPadding {
+    padding: 13px 18px 13px 18px;
+}
+
 @mixin orangeButton {
     font-family: $button-font;
     font-weight: bold;
