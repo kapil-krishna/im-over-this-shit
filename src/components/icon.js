@@ -2,10 +2,14 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const Icon = () => {
+export const PureIcon = ({ data }) => (
+    <Img fluid={data.file.childImageSharp.fluid} />
+)
+
+export const Icon = props => {
   const data = useStaticQuery(graphql`
     query {
-      jsIcon: file(relativePath: { eq: "javaswitch-round4-logo.png" }) {
+      file(relativePath: { eq: "javaswitch-round4-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -13,9 +17,7 @@ const Icon = () => {
         }
       }
     }
-  `);
+  `)
 
-  return <Img fluid={data.jsIcon.childImageSharp.fluid} />
-};
-
-export default Icon;
+  return <PureIcon {...props} data={data} />
+}

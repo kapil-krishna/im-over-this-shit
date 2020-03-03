@@ -1,0 +1,12 @@
+@import '../styles/general-styling.scss';
+
+.container {
+    color: $white-color;
+    background-color: $black-color;
+}
+
+.applicationForm {
+    max-width: $desktop-breakpoint;
+    margin: auto;
+    padding: 20px;
+}

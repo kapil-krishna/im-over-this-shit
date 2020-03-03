@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import Icon from "./icon";
+import { Icon } from "./icon";
 import NavBar from "./navbar";
 
 const Header = ({ siteTitle }) => (
@@ -21,4 +21,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Header;

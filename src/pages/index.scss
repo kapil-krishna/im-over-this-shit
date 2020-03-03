@@ -23,7 +23,7 @@
     border-width: 8px;
     border-color: $white-color;
     border-radius: $border-radius;
-    max-width: 992px;
+    max-width: $desktop-breakpoint;
     margin: auto;
 
 }

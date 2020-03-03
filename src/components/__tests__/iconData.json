@@ -1,0 +1,16 @@
+{
+    "file": {
+        "childImageSharp": {
+            "fluid": {
+                "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABfElEQVQ4y2NgGAWDFHyzY5h31J/h07oIMPfxpjCG/5SYl34hiOngviDG/wsimG53ujP8//+f4e+X9wx///4F49+/fzP8+/cPhBlBNAhA+Rhshuiz8YzYLAEaygTCQIUgzAxkM0I1gwxlhqmDsUGOgBuaeN/EfNWBoJl/V0UVgPh/v//mwWYJUIMSEpsPiDmgbAG4IuOA/5wx23rXzv+rafI936v7ZZBnFNC2pH+/frUAFeYAcSAQFwBxDRCvA+JsIC4E4logXgnECUA8E4jr//z5w8hgteQyT2z79eWNUf+1bzhOrHs/cU4X0MC8f79/zwUqagLiEiDuBuJJQFwJxJ1AvASIM6GGdkDpCiAWAbtycdx+izUJe+Zdjdqc+/v/f+b/D9uweRcUTqw4goIJRIMij2FC1glckcKAFAnI4owgjCyGrB4MpmccYZqUcoLxatg6phcT90KSzfdf8ORACgaD0uTzDNtidjFci1wP5l+I2sSwKnTVaIYfLgAAmEFPJXk6t/IAAAAASUVORK5CYII=",
+                "tracedSVG": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='400'%3e%3cpath%20d='M48%20168l-3%201c-3%200-10%204-14%208-3%204-3%205%200%2010l2%204%201%201%201%202c1%203%202%202%204-2l6-10%202-3%204-8%203-4h-3l-3%201m9%202l-2%204-1%201-1%201-2%204-2%203%2016-1%2017-1-3-3c-6-6-8-7-10-7l-1-1-3-1-4-1c-2-1-2%200-4%202m-34%2018l-1%204v18c2%205%202%205%2012%205%209%200%209-1%206-5l-2-3-3-5a79%2079%200%2001-6-11l-2-3c-2-4-3-4-4%200m44-2a247%20247%200%200018%2030c3%200%205-20%202-27l-1-3H67m4%2021l-2%203-4%207a235%20235%200%2000-9%2015l-2%202h5l6-1%2014-9c4-3%204-5%201-8l-2-3-5-8-2%202m-44%2013c0%204%2016%2014%2022%2014%203%200%204-1%206-4l4-7%202-4H44l-17%201'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e",
+                "srcWebp": "/static/8a1dcdef11caf746e205a8cff43cdbcf/61e93/javaswitch-round4-logo.webp",
+                "srcSetWebp": "/static/8a1dcdef11caf746e205a8cff43cdbcf/fc890/javaswitch-round4-logo.webp 75w,\n/static/8a1dcdef11caf746e205a8cff43cdbcf/e7487/javaswitch-round4-logo.webp 150w,\n/static/8a1dcdef11caf746e205a8cff43cdbcf/61e93/javaswitch-round4-logo.webp 200w",
+                "originalImg": "/static/8a1dcdef11caf746e205a8cff43cdbcf/69585/javaswitch-round4-logo.png",
+                "originalName": "javaswitch-round4-logo.png",
+                "presentationWidth": 200,
+                "presentationHeight": 200
+            }
+        }
+    }
+}

@@ -6,9 +6,11 @@ import SEO from "../components/seo";
 const ContactUsPage = () => (
   <Layout>
     <SEO title="Contact Us" />
+    <div className="container">
+    <section className="formSection">
     <h1>Contact us</h1>
     <p>If you have any comments, use the form below to get in touch</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    </section>
     </div>
   </Layout>
 )

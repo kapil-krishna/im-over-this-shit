@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import "./testimonial.scss";
 
-const Testimonials = () => {
+export default function Testimonials () {
     const data = useStaticQuery(graphql`
     query {
         allFile(filter: {relativeDirectory: {eq: "testimonials"}}) {
@@ -48,5 +48,3 @@ const Testimonials = () => {
         </div>
     )
 }
-
-export default Testimonials;

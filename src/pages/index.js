@@ -3,12 +3,13 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "./index.scss";
 import LogoGrid from "../components/logoGrid";
-import Icon from '../components/icon';
+import { Icon } from '../components/icon';
 import Testimonials from "../components/testimonial";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <div className="container">
 
     <section className="banner">
       <div className="bannerOutline">
@@ -41,8 +42,7 @@ const IndexPage = () => (
       <LogoGrid />
     </section>
     
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-    </div>
+  </div>
   </Layout>
 )
 
