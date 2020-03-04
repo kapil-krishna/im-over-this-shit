@@ -6,15 +6,20 @@
     justify-content: space-between;
     background-color: $purple-color;
 
+    height: 80px;
     box-sizing: border-box;
 
     .gatsby-image-wrapper {
         width: 200px;
         max-height: 80px;
     }
-    
+
     @media screen and (min-width: $nav-width) {
         flex-direction: row;
+    }
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        height: 100px;
     }
 }
 
