@@ -1,9 +1,13 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import { Link } from "gatsby";
+import "./icon.scss";
 
 export const PureIcon = ({ data }) => (
-    <Img fluid={data.file.childImageSharp.fluid} />
+    <Link to="/">
+      <Img fluid={data.file.childImageSharp.fluid} />
+    </Link>
 )
 
 export const Icon = props => {
@@ -19,5 +23,5 @@ export const Icon = props => {
     }
   `)
 
-  return <PureIcon {...props} data={data} />
+  return <PureIcon className="logo-icon" {...props} data={data} />
 }

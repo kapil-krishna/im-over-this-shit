@@ -1,0 +1,25 @@
+@import "../styles/general-styling.scss";
+
+.mainHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $purple-color;
+
+    box-sizing: border-box;
+
+    .gatsby-image-wrapper {
+        width: 200px;
+        max-height: 80px;
+    }
+    
+    @media screen and (min-width: $nav-width) {
+        flex-direction: row;
+    }
+}
+
+.top-line-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

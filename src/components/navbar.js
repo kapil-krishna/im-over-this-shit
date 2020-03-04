@@ -2,10 +2,17 @@ import React from 'react';
 import Link from 'gatsby-link';
 import './navbar.scss';
 
-export default function NavBar() {
-    return (
+const NavBar = ({ toggle }) => {
+    
+    let navClass = 'navbar';
+
+    if (toggle===true) {
+        navClass = 'navbar-open';
+    }
+
+    return (   
         <nav>
-            <ul className="navbar">
+            <ul className={navClass}>
                 <li>
                     <Link to="/" className="nav-element">Home</Link>
                 </li>
@@ -28,3 +35,5 @@ export default function NavBar() {
         </nav>
     )
 }
+
+export default NavBar;

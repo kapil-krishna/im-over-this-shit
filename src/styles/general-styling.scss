@@ -21,6 +21,11 @@ $large-desktop-breakpoint: 1200px;
 
 $section-padding-bottom: 50px;
 
+$navbar-height: 80px;
+$nav-width: 912px;
+$nav-font-big: 20px;
+$nav-font-small: 17px;
+
 section {
     margin: 0 auto;
     padding: 15px;
@@ -45,6 +50,69 @@ section {
 
 @mixin navPadding {
     padding: 13px 18px 13px 18px;
+}
+
+
+@mixin navStyling {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 10px;
+    list-style: none;
+
+    li {
+        padding: 20px 5px 20px 5px;
+    }
+    
+    .nav-element {
+        @include navPadding;
+        border-style: solid;
+        border-color: $purple-color;
+        border-radius: $button-radius;
+        font-family: $button-font;
+        font-size: $nav-font-big;
+        font-weight: bold;
+        color: $white-color;
+        text-decoration: none;
+        transition: 0.4s;
+        
+    }
+    
+    .nav-element:hover {
+        border-color: $aqua-color;
+        background-color: $black-color;
+    
+    }
+    
+    .applyButton {
+        @include orangeButtonWhiteBack;
+        font-size: $nav-font-big;
+        padding: 10px 18px 10px 18px !important;
+        margin-left: 10px;
+    
+        &:hover {
+            border-color: $aqua-color;
+        }
+    }
+
+    @media screen and (min-width: $nav-width + 1) {
+        display: flex;
+        flex-direction: inherit;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: auto;
+        margin: auto;
+        margin-right: 0px;
+
+        .nav-element {
+            font-size: $nav-font-small;
+        }
+
+        .applyButton {
+            font-size: $nav-font-small + 3;
+            margin-left: 0px;
+        }
+    }
 }
 
 @mixin orangeButton {

@@ -1,0 +1,24 @@
+@import "../styles/general-styling.scss";
+
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: $navbar-height;
+    background: transparent;
+    border: none;
+    padding: 18px;
+
+
+    @media screen and (min-width: 912px) {
+        display: none;
+    }
+}
+
+.toggle-button-line {
+    margin: auto;
+    width: 40px;
+    height: 5px;
+    background: white;
+    border-radius: $border-radius;
+}
