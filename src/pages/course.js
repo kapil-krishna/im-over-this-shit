@@ -13,6 +13,11 @@ const CoursePage = () => (
           </div>
           <div className="content">
             <p>Generic info about the course</p>
+            <p>...</p>
+            <p>...</p>
+            <p>...</p>
+            <p>...</p>
+            <p>...</p>
             <div className="faqButton">
               <a href="/faq">Have questions? Check out our FAQ page</a>
             </div>

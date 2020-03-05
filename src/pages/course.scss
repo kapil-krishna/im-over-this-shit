@@ -2,6 +2,10 @@
 
 .faqButton {
     @include orangeButtonWhiteBack;
-    text-decoration: none;
-    width: auto;
+    width: auto !important;
+
+    a {
+        color: $white-color;
+        text-decoration: none;
+    }
 }

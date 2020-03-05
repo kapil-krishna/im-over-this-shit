@@ -17,7 +17,7 @@ const IndexPage = () => (
           <Icon/>
           <h2>The markets leading software engineer transformation programme
             <br></br><br></br>
-            Join us today and discover a world you never knew!</h2>
+            JavaSwitch your game up</h2>
         </div>
       </div>
       <div className="bannerButtons">
