@@ -82,10 +82,11 @@ section {
         padding: 20px 5px 20px 5px;
         margin: auto;
         
+        
     }
     
     a {
-        transition: $button-transition;
+        transition: height 0.5s ease;
     }
     
     .nav-element {
@@ -101,6 +102,7 @@ section {
     }
     
     .nav-element:hover {
+        transition: $button-transition;
         border-color: $aqua-color;
         background-color: $black-color;
     

@@ -6,9 +6,14 @@ const AboutPage = () => (
   <Layout>
     <SEO title="Branches" />
     <div className="container">
-    <section className="formSection">
-    <h1>Branches</h1>
-    </section>
+      <section className="branchSection">
+        <div className="title">
+          <h1>Branches</h1>
+        </div>
+        <div className="content">
+          <p>Content placeholder</p>
+        </div>
+      </section>
     </div>
   </Layout>
 )

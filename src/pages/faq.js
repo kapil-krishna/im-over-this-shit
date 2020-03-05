@@ -22,11 +22,11 @@ const FaqPage = () => {
         <SEO title="FAQ" />
           <div className="container">
             <section className="faqSection">
-              <div className="faqTitle">
+              <div className="title">
                 <h1>{data.markdownRemark.frontmatter.title}</h1>
               </div>
               <div 
-                className="faqContent" 
+                className="content" 
                 dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}/>
             </section>
           </div>  

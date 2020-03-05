@@ -11,11 +11,13 @@ const ApplyPage = () => {
       <SEO title="Apply" />
       <div className="container">
         <section className="formSection">
-        <h1>Apply</h1>
-        <p>Use the below form to apply for the programme</p>
-        <div className="appForm">
-         <ApplicationForm/>
-        </div>
+          <div className="title">
+            <h1>Apply</h1>
+          </div>
+          <div className="content">
+            <p>Use the below form to apply for the programme</p>
+          </div>
+            <ApplicationForm/>
         </section>
       </div>
     </Layout>
