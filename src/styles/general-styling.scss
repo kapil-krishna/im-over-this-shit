@@ -32,12 +32,21 @@ section {
     margin: 0 auto;
     padding: 15px;
     text-align: center;
-    // max-width: $desktop-breakpoint;
+}
+
+label, input {
+    font-family: $main-font;
+}
+
+.error-text {
+    padding: 0px;
+    font-size: 18px;
+    color: red;
 }
 
 .container {
-    color: $white-color;
-    background-color: $black-color;
+    color: $black-color;
+    background-color: $white-color;
 }
 
 @mixin content {
@@ -55,7 +64,7 @@ section {
 
 @mixin heading {
     color: $white-color;
-    background-color: $black-color;
+    background-color: $aqua-color;
     max-width: none;
     border-radius: $border-radius;
     border-style: solid;
@@ -86,7 +95,7 @@ section {
     }
     
     a {
-        transition: height 0.5s ease;
+        // transition: height 0.5s ease;
     }
     
     .nav-element {

@@ -15,21 +15,18 @@ export function ValidatePostFields(values) {
 export function ValidateUserFields(values) {
 let errors = {};
 if (!values.firstName) {
-    errors.firstName = 'Required';
+    errors.firstName = 'First name is required';
 }
 if (!values.lastName) {
-    errors.lastName = 'Required';
-}
-if (!values.username) {
-    errors.username = 'Required';
+    errors.lastName = 'Last name is required';
 }
 if (!values.email) {
-    errors.email = 'Required';
+    errors.email = 'Email is required';
 } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-    errors.email = 'Invalid email address';
-  }
-if (!values.username) {
-    errors.message = 'Required';
+    errors.email = 'Please use a valid email address';
+}
+if (!values.phone) {
+    errors.phone = 'Phone is required';
 }
 return errors;
 }
