@@ -2,15 +2,14 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "./course.scss";
+import { CourseBanner } from "../components/banners/courseBanner";
 
 const CoursePage = () => (
   <Layout>
     <SEO title="Course" />
       <div className="container">
-        <section className="formSection">
-          <div className="title">
-            <h1>Course</h1>
-          </div>
+        <CourseBanner/>
+          <section className="courseSection">
           <div className="content">
             <p>Generic info about the course</p>
             <p>...</p>

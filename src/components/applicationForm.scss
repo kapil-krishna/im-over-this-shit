@@ -1,40 +1,57 @@
 @import '../styles/general-styling.scss';
 
-.container {
-    color: $white-color;
-    background-color: $black-color;
-}
-
 .appFormContainer {
     max-width: $desktop-breakpoint;
     margin: auto;
     padding: 15px;
+    background-color: black;
+    // border-style: solid;
+    // border-color: $purple-color;
+    border-width: 3px;
+    border-radius: $border-radius;
 }
 
-legend {
-    font-size: 30px;
-    font-weight: bold;
+.appFormNote {
+    font-size: 18px;
+    margin: auto;
+
+    @media screen and (max-width: $desktop-breakpoint - 1) {
+        max-width: 450px;
+    }
 }
 
-fieldset {
+.appForm {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-family: $main-font;
+    justify-content: space-between;
+    width: 800px;
+    margin: auto;
 
-    field {
-        width: 350px;
-        text-align: left;
-        margin: 20px;
-    }
-
-    input {
-        width: 350px;
+    @media screen and (min-width: $desktop-breakpoint) {
+        flex-direction: row;
     }
 }
 
+field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    height: 76px;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 20px;
+
+    input {
+        // border-style: solid;
+        background-color: white;
+    }
+}
 
 .submitButton {
     @include orangeButtonWhiteBack;
-    margin: 20px;
+    margin: auto;
+    margin-top: 40px;
+    border-color: $white-color;
 }

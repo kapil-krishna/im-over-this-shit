@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ApplicationForm from "../components/applicationForm";
 import './apply.scss';
+import { ApplyBanner } from "../components/banners/applyBanner";
 
 const ApplyPage = () => {
 
@@ -10,12 +11,10 @@ const ApplyPage = () => {
     <Layout>
       <SEO title="Apply" />
       <div className="container">
+        <ApplyBanner />
         <section className="formSection">
-          <div className="title">
-            <h1>Apply</h1>
-          </div>
           <div className="content">
-            <p>Use the below form to apply for the programme</p>
+            <p>Interested? Apply using the form below and we'll be in touch</p>
           </div>
             <ApplicationForm/>
         </section>

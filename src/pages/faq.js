@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { useStaticQuery, graphql } from "gatsby";
+import { FaqBanner } from "../components/banners/faqBanner";
 import './faq.scss';
 
 const FaqPage = () => {
@@ -21,12 +22,10 @@ const FaqPage = () => {
       <Layout>
         <SEO title="FAQ" />
           <div className="container">
+            <FaqBanner/>
             <section className="faqSection">
-              <div className="title">
-                <h1>{data.markdownRemark.frontmatter.title}</h1>
-              </div>
               <div 
-                className="content" 
+                className="faqContent" 
                 dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}/>
             </section>
           </div>  

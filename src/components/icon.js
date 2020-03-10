@@ -15,7 +15,7 @@ export const Icon = props => {
     query {
       file(relativePath: { eq: "javaswitch-round4-logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
@@ -23,5 +23,7 @@ export const Icon = props => {
     }
   `)
 
-  return <PureIcon className="logo-icon" {...props} data={data} />
+  return (
+    <PureIcon className="logo-icon" {...props} data={data} />
+  )
 }

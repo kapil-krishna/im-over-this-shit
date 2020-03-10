@@ -1,1 +1,8 @@
 @import '../styles/general-styling.scss';
+
+.faqContent {
+    margin: 20px auto;
+    max-width: $desktop-breakpoint;
+    border-style: solid;
+    border-color: $purple-color;
+}
