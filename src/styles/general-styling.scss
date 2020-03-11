@@ -229,6 +229,7 @@ select:focus {
     border-style: solid;
     padding: 14px;
     transition: $button-transition;
+    cursor: pointer;
     
     @media screen and (min-width: $desktop-breakpoint) {
         padding: 20px;

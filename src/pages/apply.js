@@ -13,7 +13,8 @@ const ApplyPage = () => {
       <div className="container">
         <ApplyBanner />
         <section className="formSection">
-            <ApplicationForm/>
+          <h2>Application Form</h2>
+          <ApplicationForm/>
         </section>
       </div>
     </Layout>

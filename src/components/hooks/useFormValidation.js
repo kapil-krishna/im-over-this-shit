@@ -9,7 +9,7 @@ export function UseFormValidation(initialState, validate) {
         if (isSubmitting) {
             const noErrors = Object.keys(errors).length === 0;
             if (noErrors) {
-                alert(`Uploading...
+                alert(`Sending form...
                 `);
                 setSubmitting(false);
             } else {
@@ -36,10 +36,9 @@ export function UseFormValidation(initialState, validate) {
         const validationErrors = validate(values);
         setErrors(validationErrors);
         setSubmitting(true);
-        const form = event.target;
-        const formData = new FormData(form);     
-        fetchData(formData)
-            .then(() => setSubmitting(false));
+        // const form = event.target;
+        // const formData = new FormData(form);     
+        setSubmitting(false);
     }
 
     async function fetchData(formData) {
