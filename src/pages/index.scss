@@ -54,6 +54,7 @@
     h2 {
         font-size: 20px;
         font-weight: bolder;
+        margin: 10px;
 
         @media screen and (min-width: $tablet-breakpoint) {
             font-size: 24px;
@@ -76,9 +77,9 @@
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    margin-top: -60px;
-    max-width: 450px;
+    margin-top: -70px;
     min-width: 320px;
+    
 
     .applyNow {
         @include orangeButtonWhiteBack;
@@ -86,6 +87,11 @@
     
     .contact {
         @include orangeButtonWhiteBack;
+    }
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        margin-top: -130px;
+        width: 500px;
     }
 }
 
