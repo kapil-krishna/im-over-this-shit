@@ -10,7 +10,7 @@ const ContactUsPage = () => (
       <ContactBanner />
       <section className="contactSection">
         <div className="content">
-          <p>If you have any comments, use the form below to get in touch</p>
+          <h2>Get in touch using the form below</h2>
         </div>
       </section>
     </div>

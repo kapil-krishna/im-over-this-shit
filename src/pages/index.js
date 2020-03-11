@@ -5,26 +5,16 @@ import "./index.scss";
 import LogoGrid from "../components/logoGrid";
 import { Icon } from '../components/icon';
 import Testimonials from "../components/testimonial";
+import { HomeBanner } from "../components/banners/homeBanner";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="container">
-
-    <section className="banner">
-      <div className="bannerOutline">
-        <div className="bannerContent">
-          <Icon/>
-          <h2>The markets leading software engineer transformation programme
-            <br></br><br></br>
-            JavaSwitch your game up</h2>
-        </div>
-      </div>
-      <div className="bannerButtons">
-            <a className="applyNow" href="/apply">Apply Now</a>
-            <a className="contact" href="/contact">Contact Us</a>
-        </div>
-    </section>
+    <div className="heroBanner">
+    <HomeBanner/>
+    </div>
+  
 
     <section className="aboutContainer">
       <h2>About the course</h2>

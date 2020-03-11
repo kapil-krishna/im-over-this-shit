@@ -21,7 +21,9 @@ export const ApplyBanner = props => {
     <BackgroundImage {...props} fluid={imageData}>
         <div className="title">
             <h1>Apply</h1>
+            <h2>Interested? Apply using the form below and we'll be in touch</h2>
         </div>
+
     </BackgroundImage>
   )
 };

@@ -13,9 +13,6 @@ const ApplyPage = () => {
       <div className="container">
         <ApplyBanner />
         <section className="formSection">
-          <div className="content">
-            <p>Interested? Apply using the form below and we'll be in touch</p>
-          </div>
             <ApplicationForm/>
         </section>
       </div>

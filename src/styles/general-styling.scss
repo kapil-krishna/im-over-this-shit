@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Didact+Gothic&display=swap');
 
-$purple-color: rgb(94, 60, 214);
+$purple-color: rgb(98, 0, 255);
+$purple-alt-color: rgb(114, 43, 247);
 $aqua-color: rgb(47, 196, 216);
+$green-color: rgb(63, 219, 102);
 $black-color: black;
 $white-color: rgb(255, 255, 255);
 $charcoal-color: rgb(68, 64, 64);
 $orange-color: rgb(255, 94, 0);
+$salmon-color: rgb(216, 56, 96);
 $background-color: white;
 
 $button-font: 'Poppins', sans-serif;
@@ -76,29 +79,52 @@ select:focus {
 
 //images
 
+.gatsby-image-wrapper {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    // opacity: 0.8;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        height: 650px;
+    }
+}
+
 .gatsby-background-image {
-    opacity: 0.2 !important;
+    opacity: 0.5;
 }
 
 .title {
     display: flex;
-    font-size: 100px;
-    height: 400px;
+    flex-direction: column;
+    margin: auto;
+    max-width: 800px;
+    border: solid 6px;
+    color: white;
+    border-color: $purple-color;
+    background-color: $black-color;
+    opacity: 0.9;
+    // opacity: 0.85;
 
     h1 {
-        margin: auto 20px;
-        width: 600px;
-        border-style: solid;
-        border-width: 6px;
+        margin: auto 50px;
+        width: auto;
         font-size: 50px;
     }
 
+    h2 {
+        margin: 50px;
+        margin-top: 30px;
+        border-top: solid 6px;
+        font-size: 25px;
+        // border-color: $purple-color;
+    }
+
     @media screen and (min-width: $tablet-breakpoint) {
-        height: 650px;
 
         h1 {
             margin: auto;
-            width: 800px;
+            width: 700px;
             font-size: 70px;
         }
     }
@@ -119,6 +145,7 @@ select:focus {
     margin-bottom: 20px !important;
 }
 
+//nav
 
 @mixin navPadding {
     padding: 13px 18px 13px 18px;
@@ -136,12 +163,6 @@ select:focus {
     li {
         padding: 20px 5px 20px 5px;
         margin: auto;
-        
-        
-    }
-    
-    a {
-        // transition: height 0.5s ease;
     }
     
     .nav-element {
@@ -158,7 +179,7 @@ select:focus {
     
     .nav-element:hover {
         transition: $button-transition;
-        border-color: $aqua-color;
+        border-color: $white-color;
         background-color: $black-color;
     
     }
@@ -170,7 +191,7 @@ select:focus {
         margin-left: 10px;
     
         &:hover {
-            border-color: $aqua-color;
+            border-color: $white-color;
         }
     }
 
