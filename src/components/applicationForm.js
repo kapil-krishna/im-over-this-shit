@@ -20,8 +20,14 @@ export default function ApplicationForm() {
             {isSubmitting && <div>Is Submitting</div>}
         <h3>Personal information</h3>
         <p className="appFormNote">* denotes mandatory field</p>
-        <form name="app" method ="post" data-netlify="true" data-netlify-honeypot="bot-field" className="appForm">
-        {/* onSubmit={handleSubmit} */}
+        <form 
+            name="app" 
+            method ="post" 
+            data-netlify="true" 
+            data-netlify-honeypot="bot-field" 
+            className="appForm"
+            onSubmit={handleSubmit}>
+
             <input type="hidden" name="form-name" value="app" />    
                 <field>
                     <label>First name*</label>
@@ -106,6 +112,7 @@ export default function ApplicationForm() {
                     {errors.cohort && <p className="error-text">{errors.cohort}</p>}
                 </field>
                 <input className="submitButton" type="submit" value="Submit" disabled={isSubmitting} />
+                
         </form>
         </div>
     );

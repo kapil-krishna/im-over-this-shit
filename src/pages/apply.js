@@ -5,9 +5,7 @@ import ApplicationForm from "../components/applicationForm";
 import './apply.scss';
 import { ApplyBanner } from "../components/banners/applyBanner";
 
-const ApplyPage = () => {
-
-  return (
+const ApplyPage = () => (
     <Layout>
       <SEO title="Apply" />
       <div className="container">
@@ -19,6 +17,5 @@ const ApplyPage = () => {
       </div>
     </Layout>
   )
-}
 
 export default ApplyPage;
