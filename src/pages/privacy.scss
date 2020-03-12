@@ -1,0 +1,7 @@
+@import "../styles/general-styling.scss";
+
+.policySection {
+    h2, h3, h4 {
+        max-width: $desktop-breakpoint;
+    }
+}
