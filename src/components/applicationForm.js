@@ -22,7 +22,7 @@ export default function ApplicationForm() {
         <p className="appFormNote">* denotes mandatory field</p>
         <form name="app" method ="post" data-netlify="true" data-netlify-honeypot="bot-field" className="appForm">
         {/* onSubmit={handleSubmit} */}
-            <input type="hidden" name="bot-field" value="application" />    
+            <input type="hidden" name="form-name" value="application" />    
                 <field>
                     <label>First name*</label>
                     <input
