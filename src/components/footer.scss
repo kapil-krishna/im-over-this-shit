@@ -1,0 +1,33 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    img {
+        margin: 0px;
+    }
+
+    .contactFooter {
+        
+        padding: 20px;
+
+        h2 {
+            padding: 15px 0px;
+            font-size: 22px;
+            text-align: left;
+        }
+
+        a, p {
+            font-size: 18px;
+            padding: 0px;
+            padding-top: 5px;
+            max-width: none;
+        // text-decoration: none;
+        }
+    }
+
+    .privacyPol {
+        font-size: 18px;
+        padding: 30px 20px;
+    }
+}

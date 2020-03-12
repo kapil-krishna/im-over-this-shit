@@ -5,9 +5,9 @@ import BackgroundImage from 'gatsby-background-image';
 export const BranchBanner = props => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "locations-image.jpg" }) {
+      file(relativePath: { eq: "locations-image3.jpg" }) {
         childImageSharp {
-          fluid (quality: 90) {
+          fluid (quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }

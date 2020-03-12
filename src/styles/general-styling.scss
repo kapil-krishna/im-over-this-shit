@@ -40,6 +40,11 @@ section {
     text-align: center;
 }
 
+h1, h2, h3, h4, a, p {
+    font-family: $main-font;
+    color: $white-color;
+}
+
 label, input, select {
     font-family: $main-font;
     border-radius: 2px;
@@ -312,7 +317,6 @@ h4 {
 }
 
 p {
-    font-family: $main-font;
     text-align: justify;
     font-size: 20px;
 
