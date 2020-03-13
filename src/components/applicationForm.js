@@ -112,7 +112,7 @@ export default function ApplicationForm() {
                     {errors.cohort && <p className="error-text">{errors.cohort}</p>}
                 </field>
                 <input className="submitButton" type="submit" value="Submit" disabled={isSubmitting} />
-                
+
         </form>
         </div>
     );

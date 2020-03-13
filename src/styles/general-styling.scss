@@ -188,7 +188,8 @@ select:focus {
     }
     
     .nav-element:hover {
-        transition: $button-transition;
+        transition: 0.5s;
+        // text-decoration: underline;
         border-color: $white-color;
         background-color: $black-color;
     
