@@ -45,10 +45,6 @@ h1, h2, h3, h4, a, p {
     color: $white-color;
 }
 
-label, input, select {
-    font-family: $main-font;
-    border-radius: 2px;
-}
 
 input:focus {
     color: none;
@@ -362,6 +358,12 @@ p {
         width: 750px;
     }
 }
+
+label, input, select {
+    font-family: $main-font;
+    border-radius: 2px;
+}
+
 
 @mixin formField {
     display: flex;

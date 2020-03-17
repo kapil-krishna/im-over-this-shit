@@ -77,7 +77,7 @@ export default function ContactForm() {
                     <label>Query*</label>
                     <textarea
                         name="query"
-                        rows="6"
+                        rows="8"
                         value={values.query}
                         autoComplete="off"
                         onChange={handleChange}
