@@ -1,0 +1,29 @@
+@import "../styles/general-styling.scss";
+
+.contactFormContainer {
+    @include formOutline;
+}
+
+.contactFormNote {
+    @include formNote;
+}
+
+.contactForm{
+    @include formMain;
+}
+
+.queryBox {
+    height: unset;
+    font-family: $main-font;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        max-width: unset;
+        margin: 0px 37.5px;
+        margin-bottom: 40px;
+    }
+
+}
+
+.submitButton {
+    @include formSubmit;
+}

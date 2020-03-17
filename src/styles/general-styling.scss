@@ -324,5 +324,64 @@ p {
     @include frame;
 }
 
+//forms
 
-//header, sub-header and paragraph fonts + styling
+@mixin formOutline {
+    max-width: $desktop-breakpoint;
+    margin: auto;
+    padding: 15px;
+    border-style: solid;
+    border-color: $purple-color;
+    border-width: 3px;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+@mixin formNote {
+    font-size: 18px;
+    text-align: center;
+
+    @media screen and (max-width: $desktop-breakpoint - 1) {
+        max-width: 450px;
+        
+    }
+}
+
+@mixin formMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: auto;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        flex-direction: row;
+        width: 750px;
+    }
+}
+
+@mixin formField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    height: 76px;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 20px;
+
+    input {
+        border-style: solid;
+        border-color: white;
+    }
+}
+
+@mixin formSubmit {
+    @include orangeButtonWhiteBack;
+    width: 220px !important;
+    margin: auto;
+    border-color: $white-color;
+}

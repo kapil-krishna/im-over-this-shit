@@ -1,64 +1,21 @@
 @import '../styles/general-styling.scss';
 
 .appFormContainer {
-    max-width: $desktop-breakpoint;
-    margin: auto;
-    padding: 15px;
-    border-style: solid;
-    border-color: $purple-color;
-    border-width: 3px;
-    // border-radius: $border-radius;
-
-    h3 {
-        text-align: center;
-    }
+    @include formOutline;
 }
 
 .appFormNote {
-    font-size: 18px;
-    text-align: center;
-
-    @media screen and (max-width: $desktop-breakpoint - 1) {
-        max-width: 450px;
-        
-    }
+    @include formNote;
 }
 
 .appForm {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: space-between;
-    margin: auto;
-
-    @media screen and (min-width: $desktop-breakpoint) {
-        flex-direction: row;
-        width: 750px;
-    }
+    @include formMain;
 }
 
 field {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 300px;
-    height: 76px;
-    text-align: left;
-    margin: auto;
-    margin-bottom: 20px;
-
-    input {
-        border-style: solid;
-        border-color: white;
-        // background-color: rgb(218, 214, 214);
-        
-    }
+    @include formField;
 }
 
 .submitButton {
-    @include orangeButtonWhiteBack;
-    width: 220px !important;
-    margin: auto;
-    border-color: $white-color;
+    @include formSubmit;
 }

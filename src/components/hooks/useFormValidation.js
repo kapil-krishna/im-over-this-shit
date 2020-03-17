@@ -25,12 +25,6 @@ export function UseFormValidation(initialState, validate) {
         })
     }
 
-    async function getUsernames(event) {
-        const query = event.target.value + "%"
-        const response = (await fetch("http://localhost:8080/api/users?username=" + query)).json();
-        return response;
-        }
-
     function handleSubmit(event) {
         event.preventDefault();
         const validationErrors = validate(values);
@@ -41,5 +35,5 @@ export function UseFormValidation(initialState, validate) {
         setSubmitting(false);
     }
 
-    return {handleSubmit, handleChange, values, errors, isSubmitting, getUsernames}
+    return {handleSubmit, handleChange, values, errors, isSubmitting}
 }
