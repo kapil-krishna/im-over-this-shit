@@ -45,30 +45,6 @@ h1, h2, h3, h4, a, p {
     color: $white-color;
 }
 
-
-input:focus {
-    color: none;
-}
-
-select:focus {
-    border-color: $purple-color;
-}
-
-.error-input {
-    border-color: red;
-    border-width: 2px;
-}
-
-.error-text {
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
-    font-weight: bold;
-    color: red;
-    transition: 10s;
-
-}
-
 .container {
     color: $white-color;
     background-color: $black-color;
@@ -322,6 +298,29 @@ p {
 
 //forms
 
+label, input, select, textarea {
+    font-family: $main-font;
+    border-radius: 2px;
+}
+
+input, select, textarea {
+    border-style: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    // border-color: $purple-color;
+}
+
+.error-text {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    transition: 2s;
+
+}
+
 @mixin formOutline {
     max-width: $desktop-breakpoint;
     margin: auto;
@@ -359,12 +358,6 @@ p {
     }
 }
 
-label, input, select {
-    font-family: $main-font;
-    border-radius: 2px;
-}
-
-
 @mixin formField {
     display: flex;
     flex-direction: column;
@@ -373,17 +366,15 @@ label, input, select {
     height: 76px;
     text-align: left;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
-    input {
-        border-style: solid;
-        border-color: white;
-    }
+
 }
 
 @mixin formSubmit {
     @include orangeButtonWhiteBack;
     width: 220px !important;
     margin: auto;
+    margin-top: 20px;
     border-color: $white-color;
 }
