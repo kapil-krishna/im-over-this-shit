@@ -300,15 +300,19 @@ p {
 
 label, input, select, textarea {
     font-family: $main-font;
-    border-radius: 2px;
+    border-radius: 0px;
 }
 
 input, select, textarea {
-    border-style: none;
+    margin-top: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $white-color;
 }
 
 input:focus, select:focus, textarea:focus {
-    // border-color: $purple-color;
+    outline: none;
+    border-color: rgb(116, 116, 116);
 }
 
 .error-text {
