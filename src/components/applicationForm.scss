@@ -12,10 +12,6 @@
     @include formMain;
 }
 
-field {
-    @include formField;
-}
-
 .submitButton {
     @include formSubmit;
 }

@@ -3,13 +3,14 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import "./testimonial.scss";
 
-export default function Testimonials () {
+export default function Testimonials() {
     const data = useStaticQuery(graphql`
     query {
         allFile(filter: {relativeDirectory: {eq: "testimonials"}}) {
             edges {
                 node {
                     childMarkdownRemark {
+                        excerpt
                         frontmatter {
                             title
                             featuredImage {
@@ -40,7 +41,7 @@ export default function Testimonials () {
                     </div>
                     <div
                         className="testimonialText"
-                        dangerouslySetInnerHTML={{__html: edge.node.childMarkdownRemark.html}}>
+                        dangerouslySetInnerHTML={{__html: edge.node.childMarkdownRemark.excerpt}}>
                     </div>
                 </div>
                 )

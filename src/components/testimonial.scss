@@ -11,6 +11,8 @@ $testimonial-hw: 180px;
     margin: auto;
 
     .testimonialCard {
+        font-family: $main-font;
+        text-align: left;
         width: 260px;
         padding: 10px;
         border-style: solid;
@@ -18,12 +20,15 @@ $testimonial-hw: 180px;
         border-width: 10px;
         // border-radius: 2px;
         background-color: $black-color;
-        opacity: 0.7;
-        transition: 0.3s;
+        opacity: $banner-opacity;
+        transition: 0.5s;
         margin: 20px;
 
         &:hover {
+            cursor: pointer;
             opacity: 1;
+            transform: scale(1.07);
+            
         }
         
 

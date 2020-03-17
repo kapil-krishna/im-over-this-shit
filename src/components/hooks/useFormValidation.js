@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import { encode } from 'punycode';
 
 export function UseFormValidation(initialState, validate) {
     const [values, setValues] = useState(initialState);
@@ -9,8 +10,14 @@ export function UseFormValidation(initialState, validate) {
         if (isSubmitting) {
             const noErrors = Object.keys(errors).length === 0;
             if (noErrors) {
-                alert(`Sending form...
-                `);
+                fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: encode({"form-name": "contact", ...this.state })
+                })
+                    .then(setSubmitting(true))
+                    .then(() => alert("Success!"))
+                    .catch(error => alert(error));
                 setSubmitting(false);
             } else {
                 setSubmitting(false);
@@ -29,11 +36,19 @@ export function UseFormValidation(initialState, validate) {
         event.preventDefault();
         const validationErrors = validate(values);
         setErrors(validationErrors);
-        setSubmitting(true);
-        const form = event.target;
-        const formData = new FormData(form);     
-        setSubmitting(false);
-    }
-
+        // if (validationErrors.length===0) {
+        //     fetch("/", {
+        //         method: "POST",
+        //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        //         body: encode({"form-name": "contact", ...this.state })
+        //     })
+        //         .then(setSubmitting(true))
+        //         .then(() => alert("Success!"))
+        //         .catch(error => alert(error));
+            
+            setSubmitting(false);
+        }
+    
+        
     return {handleSubmit, handleChange, values, errors, isSubmitting}
 }
