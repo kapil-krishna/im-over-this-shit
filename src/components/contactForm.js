@@ -18,7 +18,10 @@ export default function ContactForm() {
             <p className="contactFormNote">*denotes mandatory field</p>
             <form 
                 className="contactForm"
-                onSubmit={handleSubmit}>
+                name="contact" 
+                method="post" 
+                data-netlify="true" 
+                data-netlify-honeypot="bot-field">
 
                 <input type="hidden" name="form-name" value="contact" /> 
 

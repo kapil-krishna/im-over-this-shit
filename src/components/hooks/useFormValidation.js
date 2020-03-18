@@ -10,14 +10,8 @@ export function UseFormValidation(initialState, validate) {
         if (isSubmitting) {
             const noErrors = Object.keys(errors).length === 0;
             if (noErrors) {
-                fetch("/", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: encode({"form-name": "contact", ...this.state })
-                })
-                    .then(setSubmitting(true))
-                    .then(() => alert("Success!"))
-                    .catch(error => alert(error));
+                alert(`Sending form...
+                `);
                 setSubmitting(false);
             } else {
                 setSubmitting(false);
@@ -36,19 +30,20 @@ export function UseFormValidation(initialState, validate) {
         event.preventDefault();
         const validationErrors = validate(values);
         setErrors(validationErrors);
-        // if (validationErrors.length===0) {
-        //     fetch("/", {
-        //         method: "POST",
-        //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        //         body: encode({"form-name": "contact", ...this.state })
-        //     })
-        //         .then(setSubmitting(true))
-        //         .then(() => alert("Success!"))
-        //         .catch(error => alert(error));
+        const noErrors = Object.keys(errors).length === 0;
+        if (noErrors) {
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({"form-name": "contact", ...this.state })
+            })
+                .then(setSubmitting(true))
+                .then(() => alert("Success!"))
+                .catch(error => alert(error));
             
             setSubmitting(false);
         }
-    
+    }
         
     return {handleSubmit, handleChange, values, errors, isSubmitting}
 }
