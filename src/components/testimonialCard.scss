@@ -10,7 +10,6 @@ $testimonial-hw: 180px;
     border-style: solid;
     border-color: $white-color;
     border-width: 10px;
-    // border-radius: 2px;
     background-color: $black-color;
     opacity: $banner-opacity;
     transition: 0.5s;
@@ -38,22 +37,79 @@ $testimonial-hw: 180px;
     }
 }
 
+//modal
+
 .ReactModal__Overlay {
     display: flex;
+    transition: 2s;
 }
 
 .testimonialModal {
     border: solid $purple-color 10px;
     outline: none;
     margin: auto;
-    width: 70%;
+    width: 85%;
+    height: 85%;
     max-width: 900px;
-    transition: 2s;
     background-color: $black-color;
     opacity: $banner-opacity;
+
+    h2 {
+        font-size: 40px;
+    }
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        width: 70%;
+        height: unset;
+    }
 }
 
+.modalContent {
+    display: flex;
+    flex-flow: column;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        flex-flow: row;
+        margin: 10px;
+    }
+}
+
+
 .modalTestImage {
+    border: solid $white-color 2px;
+    // border-radius: $border-radius + 100;
+    margin: auto;
+    width: 60%;
     max-width: 200px;
-    max-height: 200px;
+    height: 20%;
+    max-height: 180px;
+
+    p {
+        margin: auto;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        width: 200px;
+        // max-width: 25%;
+        max-height: 200px;
+    }
+}
+
+
+.modalTestText {
+    // border: solid $white-color 2px;
+    max-width: 70%;
+    margin: auto;
+
+}
+
+.closeModalButton {
+    text-align: center;
+
+    button {
+        @include orangeButtonWhiteBack;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 150px;
+    }
 }

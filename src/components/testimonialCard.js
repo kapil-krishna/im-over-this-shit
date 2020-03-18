@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Img from "gatsby-image";
 import Modal from "react-modal";
-import "./testimonialModal.scss";
+import "./testimonialCard.scss";
 
 export default function TestimonialCard(props) {
 
@@ -37,18 +37,22 @@ export default function TestimonialCard(props) {
                 <div className="modalTestTitle">
                     <h2>{props.title}</h2>
                 </div>
-                <Img 
-                    fluid={props.fluid}
-                    className="modalTestImage"
-                />
-                <div
-                    className="modalTestText"
-                    dangerouslySetInnerHTML={{__html: props.html}}>
+                <div className="modalContent">
+                    <Img 
+                        fluid={props.fluid}
+                        className="modalTestImage"
+                    />
+                    <div
+                        className="modalTestText"
+                        dangerouslySetInnerHTML={{__html: props.html}}>
+                    </div>
                 </div>
-                <button 
-                    onClick={handleModalClose}>
-                    Close Modal
-                </button>
+                <div className="closeModalButton">
+                    <button 
+                        onClick={handleModalClose}>
+                        Close
+                    </button>
+                </div>
             </Modal>
 
         </div>
