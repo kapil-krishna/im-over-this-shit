@@ -53,6 +53,7 @@ $testimonial-hw: 180px;
     max-width: 900px;
     background-color: $black-color;
     opacity: $banner-opacity;
+    overflow: scroll;
 
     h2 {
         font-size: 40px;
@@ -98,8 +99,12 @@ $testimonial-hw: 180px;
 
 .modalTestText {
     // border: solid $white-color 2px;
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        max-width: 70%;
+    }
 
 }
 
