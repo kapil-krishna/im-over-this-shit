@@ -1,7 +1,5 @@
 @import '../styles/general-styling.scss';
 
-$testimonial-hw: 180px;
-
 .testimonials {
     display: flex;
     flex-direction: row;
@@ -9,40 +7,4 @@ $testimonial-hw: 180px;
     justify-content: space-evenly;
     max-width: 1200px;
     margin: auto;
-
-    .testimonialCard {
-        font-family: $main-font;
-        text-align: left;
-        width: 260px;
-        padding: 10px;
-        border-style: solid;
-        border-color: $white-color;
-        border-width: 10px;
-        // border-radius: 2px;
-        background-color: $black-color;
-        opacity: $banner-opacity;
-        transition: 0.5s;
-        margin: 20px;
-
-        &:hover {
-            cursor: pointer;
-            opacity: 1;
-            transform: scale(1.07);
-            
-        }
-        
-
-        .gatsby-image-wrapper {
-            width: $testimonial-hw;
-            height: $testimonial-hw;
-            border-style: solid;
-            border-radius: $border-radius + 100;
-            margin: auto;
-            margin-top: 10px;
-
-            img {
-                object-fit: contain !important; 
-            }
-        }
-    }
 }

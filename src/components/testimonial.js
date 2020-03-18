@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import TestimonialCard from "./testimonialCard";
 import "./testimonial.scss";
 
 export default function Testimonials() {
@@ -32,18 +32,12 @@ export default function Testimonials() {
     return (  
         <div className="testimonials">
             {data.allFile.edges.map(edge => 
-                <div className="testimonialCard">
-                    <Img 
-                        fluid={edge.node.childMarkdownRemark.frontmatter.featuredImage.childImageSharp.fluid} 
-                        />
-                    <div className="testimonialTitle">
-                        <h2>{edge.node.childMarkdownRemark.frontmatter.title}</h2>
-                    </div>
-                    <div
-                        className="testimonialText"
-                        dangerouslySetInnerHTML={{__html: edge.node.childMarkdownRemark.excerpt}}>
-                    </div>
-                </div>
+                <TestimonialCard
+                    fluid={edge.node.childMarkdownRemark.frontmatter.featuredImage.childImageSharp.fluid}
+                    title={edge.node.childMarkdownRemark.frontmatter.title}
+                    excerpt={edge.node.childMarkdownRemark.excerpt}
+                    html={edge.node.childMarkdownRemark.html}
+                    />
                 )
             }
         </div>
