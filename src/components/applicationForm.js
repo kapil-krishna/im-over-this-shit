@@ -18,8 +18,9 @@ export default function ApplicationForm() {
     return (
         <div className="appFormContainer">
             {isSubmitting && <div>Is Submitting</div>}
-        <h3>Personal information</h3>
+        <h3 className="firstHeading">Personal information</h3>
         <p className="appFormNote">* denotes mandatory field</p>
+
         <form 
             name="app" 
             method ="post" 
@@ -28,7 +29,9 @@ export default function ApplicationForm() {
             className="appForm"
             onSubmit={handleSubmit}>
 
-            <input type="hidden" name="form-name" value="app" />    
+            <input type="hidden" name="form-name" value="app" />
+
+            <div className="personalInfo">
                 <field>
                     <label>First name*</label>
                     <input
@@ -111,6 +114,37 @@ export default function ApplicationForm() {
                     </select>
                     {errors.cohort && <p className="error-text">{errors.cohort}</p>}
                 </field>
+            </div>
+            
+        <h3>CV</h3>
+            <div className="cvInfo">
+                <field>
+                    <label>CV*</label>
+                    <input
+                        name="cv"
+                        type="file"
+                        value={values.cv}
+                        autoComplete="off"
+                        // onChange={handleChange}
+                        className={errors.cv && 'error-input'}
+                        />
+                        {errors.cv && <p className="error-text">{errors.cv}</p>}
+                </field>
+                <field className="applyReason">
+                    <label>Why do you want to get in to software development?*</label>
+                    <textarea
+                        name="applyReason"
+                        rows="8"
+                        value={values.query}
+                        autoComplete="off"
+                        onChange={handleChange}
+                        className={errors.applyReason && 'error-input'}
+                        />
+                        {errors.applyReason && <p className="error-text">{errors.applyReason}</p>}
+                </field>
+            </div>
+
+
                 <input className="submitButton" type="submit" value="Submit" disabled={isSubmitting} />
 
         </form>

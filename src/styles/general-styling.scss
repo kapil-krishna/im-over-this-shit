@@ -367,21 +367,36 @@ input:focus, select:focus, textarea:focus {
     justify-content: space-between;
     margin: auto;
 
-    @media screen and (min-width: $desktop-breakpoint) {
+    @media screen and (min-width: $tablet-breakpoint) {
         flex-direction: row;
-        width: 750px;
+        max-width: 750px;
     }
 }
+
 
 @mixin formField {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 300px;
+    // max-width: 350px;
     height: 76px;
     text-align: left;
-    margin: auto;
     margin-bottom: 10px;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        // width: 40%;
+        max-width: 345px;
+    }
+
+    @media screen and (min-width: $desktop-breakpoint) {
+        // margin: none;
+    }
+
+}
+
+@mixin textAreaStyling {
+    max-width: unset;
+    height: unset;
 }
 
 field {

@@ -13,13 +13,7 @@
 }
 
 .queryBox {
-    height: unset;
-
-    @media screen and (min-width: $desktop-breakpoint) {
-        max-width: unset;
-        margin: 0px 37.5px;
-        margin-bottom: 40px;
-    }
+    @include textAreaStyling;
 }
 
 .submitButton {

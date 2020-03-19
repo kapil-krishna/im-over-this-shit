@@ -9,7 +9,31 @@
 }
 
 .appForm {
+
+    h3 {
+        width: 95%;
+        max-width: $tablet-breakpoint;
+        border-top: solid $purple-color 3px;
+        margin-top: 20px !important;
+        padding: 20px;
+    }
+}
+
+.personalInfo {
     @include formMain;
+}
+
+.cvInfo {
+    @include formMain;
+}
+
+.applyReason {
+    @include textAreaStyling;
+}
+
+
+.firstHeading {
+    border: none;
 }
 
 .submitButton {
