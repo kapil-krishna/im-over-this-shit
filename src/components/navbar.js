@@ -20,9 +20,6 @@ const NavBar = ({ toggle }) => {
                     <Link to="/course" className="nav-element">Course</Link>
                 </li>
                 <li>
-                    <Link to="/branches" className="nav-element">Branches</Link>
-                </li>
-                <li>
                     <Link to="/faq" className="nav-element">FAQ</Link>
                 </li>
                 <li>

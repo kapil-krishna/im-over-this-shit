@@ -1,8 +1,19 @@
 @import '../styles/general-styling.scss';
 
+.courseSection {
+    .content {
+        margin: 20px auto;
+        max-width: $desktop-breakpoint;
+        border-style: solid;
+        border-color: $purple-color;
+    }
+}
+
 .faqButton {
     @include orangeButtonWhiteBack;
     width: auto !important;
+    max-width: $desktop-breakpoint;
+    margin: auto;
 
     a {
         color: $white-color;

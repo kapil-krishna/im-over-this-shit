@@ -53,6 +53,7 @@ h1, h2, h3, h4, a, p {
 
 @mixin content {
     margin: auto;
+    margin-bottom: 20px;
     max-width: $desktop-breakpoint;
 }
 
