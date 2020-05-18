@@ -5,4 +5,10 @@
     max-width: $desktop-breakpoint;
     border-style: solid;
     border-color: $purple-color;
+
+    h2 {
+        margin-top: 10px;
+        border-bottom: solid $purple-color 3px;
+        width: fit-content;
+    }
 }

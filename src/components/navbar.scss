@@ -1,6 +1,7 @@
 @import '../styles/general-styling.scss';
 
 .navbar {
+
     @media screen and (max-width: $nav-width) {
         display: none;
     }

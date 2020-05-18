@@ -1,25 +1,8 @@
 @import '../styles/general-styling.scss';
 
-.heroBanner {
-    justify-content: space-evenly;
-}
-
 .bannerOutline {
-    // height: 400px;
-    // // border-style: solid;
-    // border-width: 8px;
-    // border-color: $purple-color;
-    // background-color: $black-color;
-    // max-width: $desktop-breakpoint;
-    // margin: 20px;
-    // z-index: -1;
-    // opacity: $banner-opacity;
-
-    
-    @media screen and (min-width: $tablet-breakpoint) {
-        margin: auto;
-    }
-
+    max-width: 90%;
+    margin: auto;
 }
 
 .bannerContent {
@@ -52,9 +35,10 @@
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 1rem;
         font-weight: bolder;
-        margin: 10px;
+        margin: auto;
+        max-width: 80%;
 
         @media screen and (min-width: $tablet-breakpoint) {
             font-size: 24px;
@@ -67,7 +51,7 @@
         }
 
         @media screen and (min-width: $desktop-breakpoint) {
-            font-size: 30px;
+            font-size: 1.5rem;
         
         }
     }
@@ -90,7 +74,7 @@
     }
 
     @media screen and (min-width: $tablet-breakpoint) {
-        margin-top: -130px;
+        margin-top: -165px;
         width: 500px;
     }
 }
@@ -102,10 +86,10 @@
     p {
         padding-bottom: $section-padding-bottom;
     }
+}
 
-    .findOutMore {
-        @include orangeButtonWhiteBack;
-    }
+.findOutMore {
+    @include orangeButtonWhiteBack;
 }
 
 .testimonialContainer {

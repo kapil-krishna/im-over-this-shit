@@ -7,11 +7,17 @@
         border-style: solid;
         border-color: $purple-color;
     }
+
+    h3 {
+        text-align: center;
+        border-bottom: solid white 3px;
+        width: fit-content;
+    }
 }
 
 .faqButton {
     @include orangeButtonWhiteBack;
-    width: auto !important;
+    width: fit-content;
     max-width: $desktop-breakpoint;
     margin: auto;
 

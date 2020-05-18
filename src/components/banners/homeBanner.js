@@ -23,8 +23,7 @@ export const HomeBanner = props => {
       <div className="bannerOutline">
         <div className="bannerContent">
           <Icon/>
-          <h2>The markets leading software engineer transformation programme</h2>
-          <h2>JavaSwitch your game up</h2>
+          <h2>The markets leading software engineering transformation programme</h2>
         </div>
       </div>
       <div className="bannerButtons">

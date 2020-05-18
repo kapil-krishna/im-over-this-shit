@@ -66,7 +66,7 @@ h1, h2, h3, h4, a, p {
     z-index: 0;
 
     @media screen and (min-width: $tablet-breakpoint) {
-        height: 650px;
+        height: 800px;
     }
 }
 
@@ -89,6 +89,7 @@ h1, h2, h3, h4, a, p {
     flex-direction: column;
     margin: auto;
     z-index: 1;
+    max-width: 80%;
 
     h1 {
         margin: auto 40px;
@@ -147,18 +148,12 @@ h1, h2, h3, h4, a, p {
     li {
         padding: 20px 8px;
         margin: auto;
-
-        &:hover {
-            transition: 0.5s;
-            transform: scale(1.1);
-        }
-        
     }
     
     .nav-element {
         @include navPadding;
-        border-color: $purple-color;
-        border-radius: $button-radius;
+        border: solid $purple-color 3px;
+        border-radius: 3px;
         font-family: $button-font;
         font-size: $nav-font-big;
         font-weight: bold;
@@ -169,6 +164,7 @@ h1, h2, h3, h4, a, p {
         &:hover {
             color: $black-color;
             background-color: $white-color;
+            border: solid $white-color 3px;
         }
     }
     
